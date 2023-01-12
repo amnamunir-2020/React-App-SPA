@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+
+/* Navbar ------------------------------------------------------- */
+
+.navbar-bg{
+    background: var(--bgcolor);
+    padding: 2rem 0;
+    z-index:99;
+    position: relative;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+}
+
+.navbar li {
+    padding:0 2rem ;
+}
+
+.navbar li a{
+   font-size:1.7rem ;
+   font-weight:lighter;
+}
+
+.navbar li a:hover{
+    color: var(--primary-color);
+    text-shadow: 0.02rem 0.3rem rgba(rgb(177, 138, 182));
+ }
+
+ .btn-style{
+    width: 12rem;
+    height:4rem;
+    border-color: #6f5de7;
+    border-radius: 2rem;
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+ }
+
+ .btn-style:hover{
+   border: 0.1rem solid var(--primary-color) ;
+   background: transparent;
+   color: var(--primary-color);
+   box-shadow:0.02rem 0.5rem rgb(183,171, 255, 0.5);
+ }
+
+ .btn-style:first-child{
+    margin-right: 2rem;
+ }
+
+ .btn-style-border{
+    width: 12rem;
+    height:4rem;
+    border-color: #6f5de7;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--primary-color) ;
+   background: transparent;
+   color: var(--primary-color);
+
+ }
+
+ .btn-style-border:hover{
+  
+ background:  #6f5de7;
+ color: white;
+
+}
+
+/* Navbar Ends------------------------------------------------------- */
+:root, [data-bs-theme="light"] {
+  --bd-purple: #4c0bce;
+  --bd-violet: #712cf9;
+  --bd-accent: #ffe484;
+  --bd-violet-rgb: 112.520718,44.062154,249.437846;
+  --bd-accent-rgb: 255,228,132;
+  --bd-pink-rgb: 214,51,132;
+  --bd-teal-rgb: 32,201,151;
+  --docsearch-primary-color: var(--bd-violet);
+  --docsearch-logo-color: var(--bd-violet);
+  --bd-violet-bg: var(--bd-violet);
+  --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+}
+:root, [data-bs-theme=light] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13,110,253;
+  --bs-secondary-rgb: 108,117,125;
+  --bs-success-rgb: 25,135,84;
+  --bs-info-rgb: 13,202,240;
+  --bs-warning-rgb: 255,193,7;
+  --bs-danger-rgb: 220,53,69;
+  --bs-light-rgb: 248,249,250;
+  --bs-dark-rgb: 33,37,41;
+  --bs-primary-text: #0a58ca;
+  --bs-secondary-text: #6c757d;
+  --bs-success-text: #146c43;
+  --bs-info-text: #087990;
+  --bs-warning-text: #997404;
+  --bs-danger-text: #b02a37;
+  --bs-light-text: #6c757d;
+  --bs-dark-text: #495057;
+  --bs-primary-bg-subtle: #cfe2ff;
+  --bs-secondary-bg-subtle: #f8f9fa;
+  --bs-success-bg-subtle: #d1e7dd;
+  --bs-info-bg-subtle: #cff4fc;
+  --bs-warning-bg-subtle: #fff3cd;
+  --bs-danger-bg-subtle: #f8d7da;
+  --bs-light-bg-subtle: #fcfcfd;
+  --bs-dark-bg-subtle: #ced4da;
+  --bs-primary-border-subtle: #9ec5fe;
+  --bs-secondary-border-subtle: #e9ecef;
+  --bs-success-border-subtle: #a3cfbb;
+  --bs-info-border-subtle: #9eeaf9;
+  --bs-warning-border-subtle: #ffe69c;
+  --bs-danger-border-subtle: #f1aeb5;
+  --bs-light-border-subtle: #e9ecef;
+  --bs-dark-border-subtle: #adb5bd;
+  --bs-white-rgb: 255,255,255;
+  --bs-black-rgb: 0,0,0;
+  --bs-body-color-rgb: 33,37,41;
+  --bs-body-bg-rgb: 255,255,255;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-emphasis-color: #000;
+  --bs-emphasis-color-rgb: 0,0,0;
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+  --bs-secondary-color-rgb: 33,37,41;
+  --bs-secondary-bg: #e9ecef;
+  --bs-secondary-bg-rgb: 233,236,239;
+  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color-rgb: 33,37,41;
+  --bs-tertiary-bg: #f8f9fa;
+  --bs-tertiary-bg-rgb: 248,249,250;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255,255,255;
+  --bs-link-color: #0d6efd;}
+
+
+/* Main Hero Starts ------------------------------------------------------- */
+header{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%); 
+}
+
+
+.main-hero-section{
+  height: 80vh;
+  display: flex;
+}
+
+.main-hero-section h1{
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-hero-para{
+  font-size: 1.5rem;
+   color: var(--text-color);
+   font-weight: lighter;
+   width: 75%;
+   margin: 3rem 0 5rem 0;
+}
+
+.main-hero-section h3{
+font-weight: lighter;
+}
+
+
+.input-group{
+position: relative;
+}
+
+.form-control-text{
+  position:absolute;
+  height: 5rem;
+  border: none;
+  outline-style: none;
+  padding-left: 1.5rem!important;
+  font-weight: lighter;
+  font-size: 1.4rem;
+}
+
+.input-group-button{
+  position: absolute;
+  right: 51%;
+  top: 0.5rem;
+  left: 60%;
+  background: var(--primary-color);
+  color: #fff;
+  width: 25%;
+  border: 1px solid var(--primary-color);
+  border-radius:2rem!important;
+  height: 4rem;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.1rem;
+}
+
+
+.main-hero-images {
+position: relative;
+}
+
+.main-hero-images img{
+width: 80%;
+height: 75%;
+margin-top: 10rem;
+box-shadow: 0 0.8rem  0.8rem rgba(0, 0,0, 0.25);
+border-radius: 1.5rem;
+position:absolute;
+}
+
+.main-hero-images .main-hero-img2 {
+position: absolute;
+width: 70%;
+height: 30%;
+top:-2%;
+left: 55%;
+box-shadow: 0.8rem  0  0.8rem rgba(0, 0,0, 0.25);
+}
+
+
+/* Main Hero Ends------------------------------------------------------- */
+
+
+/* How It Works Start ------------------------------------------------------ */
+
+/* .how-it-works-section{
+
+} */
+
+.work-section{
+width:80vw;
+padding:5rem;
+box-shadow: 0 0.4rem 1.2rem rgba(0, 0,0, 0.1);
+margin-top: -3rem;
+border-radius:0.5rem;
+background: #fff;
+/* background:#fff6d4; */
+}
+
+.work-section .main-heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 4rem;
+  word-spacing: 1rem;
+}
+
+.work-box{
+  padding: 0 5rem ;
+}
+
+.work-section .sub-heading{
+font-weight: normal;
+font-size: 2rem;
+}
+
+.fontawesome-Style{
+font-size: 2rem;
+color: var(--primary-color);
+width: 6rem;
+height: 6rem;
+border-radius:50% ;
+text-align: center;
+background:var(--bgcolor);
+display: grid;
+place-items: center;
+margin: 2rem auto;
+}
+
+/* How It Works End --------------------- */
+
+/* About  Sign in  App Info Start------------------------------------------------------ */
+
+.common-section{
+  margin: 5rem 0;
+}
+.aboutus-section img{
+width: 50%;
+height:75%;
+margin-top: 10rem;
+box-shadow: rgba(0, 0,0, 0.25) 0px 0.8rem 0.8rem;
+border-radius: 1.5rem;
+}
+
+
+.aboutus-section .line-title{
+text-transform: uppercase;
+font-weight: normal;
+margin:3rem 0;
+text-align: left;
+font-size: 1.5rem;
+}
+
+
+.aboutus-section .main-heading{
+  font-weight: bold;
+}
+
+.our-app-info{
+margin-top: 4rem;
+}
+
+.aboutus-section .app-numbers{
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.app-data{
+  padding-left: 2rem;
+}
+
+.aboutus-section .app-data p{
+margin:  1rem 0;
+}
+
+/* second aboutus setion Rightside */
+.aboutus-right-content{
+  margin-top:10rem;
+}
+.about-right-side-content{
+  padding-left:8rem;
+}
+
+/* About  Sign in  App Info End-------------------------- */
+
+
+/* Services Section Start----------------------------------------------------- */
+
+.services-section
+{
+margin-top: 5rem;
+padding: 5rem 0;
+}
+
+.services-section .main-heading{
+  margin: 3rem 0;
+}
+
+ .service-box{
+  box-shadow:0 0.1rem 0.4rem rgba(0, 0,0, 0.16);
+  
+ }
+
+ .service-box:hover{
+ background: var(--bgcolor);
+ }
+
+ .service-box:hover> .fontawesome-Style{
+  background:#fff;
+  }
+
+
+ .service-box .main-hero-para{
+  width: 100%;
+ }
+
+
+.services-section .fontawesome-Style{
+  text-align: left;
+  margin: 2rem 0;
+}
+
+@media(min-width:1400px){
+  .services-section .container-xxl-4{
+    flex: 0 0 auto;
+    width: 30%!important;
+    margin: auto;
+  }
+}
+
+@media(min-width:992px){
+.services-section .col-lg-4{
+  flex: 0 0 auto;
+  width: 30%!important;
+  margin: 2.5rem auto;
+}
+
+}
+
+/* Services Section End---------- */
+
+/* Contact Section Start----------------------------------------------- */
+.contactus-section{
+  margin: 15rem 0;
+
+}
+
+.contact-left-side img{
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+
+}
+
+.contact-input-field{
+  margin-bottom: 3rem;
+}
+
+.contact-right-side form .form-control{
+  height: 5rem;
+  border: 1px solid #ced4da;
+  
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+.contact-right-side form .form-check-input{
+  width: 2em;
+  height: 2em;
+}
+
+.form-checkbox-style{
+  margin: 3rem 0;
+}
+ 
+.contact-right-side form .main-hero-para{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 75%;
+  padding:0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- responsive media queries  
+                        -------------------------------------------------------*/
+                        @media (min-width: 1500px) {
+                            .container,
+                            .container-lg,
+                            .container-md,
+                            .container-sm,
+                            .container-xl,
+                            .container-xxl {
+                              max-width: 1500px !important;
+                            }
+                          }
+                          
+                          @media (min-width: 1400px) {
+                            .container,
+                            .container-lg,
+                            .container-md,
+                            .container-sm,
+                            .container-xl,
+                            .container-xxl {
+                              max-width: 1400px;
+                            }
+                          }
+                          
+
