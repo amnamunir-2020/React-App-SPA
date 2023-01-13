@@ -40,15 +40,30 @@ const Footer = () => {
 
                 <div className='col-6 col-lg-3'>
                     <h2>Follow Us</h2>
-                    <ul>
-                        <li><i className='fas fa-instagram'></i><a href='#'>Instagram</a></li>
-                        <li><i className='fas fa-facebook'></i><a href='#'>Facebook</a></li>
-                        <li><i className='fas fa-linkedin'></i><a href='#'>Linkedin</a></li>
-                        <li><i className='fas fa-twitter'></i><a href='#'>Twitter</a></li>
-                    </ul>
+                   <div className='row'>
+                    <div className='col-3 mx-auto '>
+                      <a href='#'><i className='fab fa-facebook fontawesome-Style-social-icons '></i></a>
+                    </div>
+                    <div className='col-3 mx-auto '>
+                      <a href='#'><i className='fab fa-instagram fontawesome-Style-social-icons '></i></a>
+                    </div>
+                    <div className='col-3 mx-auto '>
+                      <a href='#'><i className='fab fa-linkedin fontawesome-Style-social-icons  '></i></a>
+                    </div>
+                    <div className='col-3 mx-auto '>
+                      <a href='#'><i className='fab fa-twitter fontawesome-Style-social-icons  '></i></a>
+                    </div>
+                   </div>
                 </div>
 
-            </div>
+            </div> 
+
+           <hr></hr>
+
+           <div className='mt-5 w-100'>
+            <p className='main-hero-para text-center'>2023 Assignment Pay, All Right Reserved &copy; Copyright </p>
+           </div>
+
 
         </div>
 
